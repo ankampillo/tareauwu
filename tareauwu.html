@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+ <meta charset="UTF-8" >
+<meta name="viewport" content="width=decive-windth, initial-scale=1.0">
+<title>tareauwu</title>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> 
+
+</head>
+<body>
+    <a-scene>
+        <a-camare position="100 0 5"></a-camare>
+
+        
+            
+              <img id="sky" src="src/assets/memeperrito.jpg">
+            <a-sky src="#sky"></a-sky>
+          
+
+
+    <a-assets>
+        <img id="boxtexture" src="src/assets/uwu.png">
+        <img id="skyTexture" src="src/assets/memeperrito.jpg">
+        <img id="ninopiso" src="src/assets/ninopiso.jpg">
+        <img id="ninonormal" src="src/assets/ninonormal.jpg">
+    </a-assets>
+    
+<a-light type="point" intensity="0.8" position= "0 10 10" distance= "200" color="red"></a-light>
+<a-light type="point" intensity="0.8" position= "10 10 10" distance= "200" color="blue"></a-light>
+<a-light type="point" intensity="0.8" position= "-0 10 10" distance= "200" color="yellow"></a-light>
+        
+            <a-box src="#boxtexture" position="0 0 0" rotation="0 -5 45" scale= "2 2 2"></a-box>
+    
+            <a-plane src="#ninopiso" material= "ninonormal:#ninonormal; normalTextureRepeat:5 5"
+             position="0 -5 0" height="20" width="20" rotation="-90 0 0" repear="5 5"></a-plane>
+    </a-scene>
+</body>
+</html>
